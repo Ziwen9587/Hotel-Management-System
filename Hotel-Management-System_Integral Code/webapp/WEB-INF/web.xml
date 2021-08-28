@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!--General Login Below-->
+    <servlet>
+        <servlet-name>generalLogin</servlet-name>
+        <servlet-class>projectServlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>generalLogin</servlet-name>
+        <url-pattern>/Login-HotelSystem</url-pattern>
+    </servlet-mapping>
+
+    <!--All Below For Customer-->
+    <servlet>
+        <servlet-name>customerSearch</servlet-name>
+        <servlet-class>projectServlet.CustomerSearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>customerSearch</servlet-name>
+        <url-pattern>/Customer-Search</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>customerEndBooking</servlet-name>
+        <servlet-class>projectServlet.CustomerEndBookingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>customerEndBooking</servlet-name>
+        <url-pattern>/Customer-End-Booking</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>customerReturnToSearch</servlet-name>
+        <servlet-class>projectServlet.CustomerReturnSearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>customerReturnToSearch</servlet-name>
+        <url-pattern>/Customer-Return-Search</url-pattern>
+    </servlet-mapping>
+
+    <!--All Below For Employee-->
+    <servlet>
+        <servlet-name>employeeLogin</servlet-name>
+        <servlet-class>projectServlet.EmployeeLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>employeeLogin</servlet-name>
+        <url-pattern>/Employee-Login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>employeeCheckBookedRoom</servlet-name>
+        <servlet-class>projectServlet.EmployeeCheckBookedRoomsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>employeeCheckBookedRoom</servlet-name>
+        <url-pattern>/Employee-Check-Booked-Rooms</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>employeeCheckAvailableRoom</servlet-name>
+        <servlet-class>projectServlet.EmployeeCheckAvailableRoomsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>employeeCheckAvailableRoom</servlet-name>
+        <url-pattern>/Employee-Check-Available-Rooms</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>employeeTransferBookedRoom</servlet-name>
+        <servlet-class>projectServlet.EmployeeTransferBookedRoomServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>employeeTransferBookedRoom</servlet-name>
+        <url-pattern>/Employee-Transfer-Booked-Rooms</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>employeeTransferNonBookedRoom</servlet-name>
+        <servlet-class>projectServlet.EmployeeTransferNonBookedRoomsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>employeeTransferNonBookedRoom</servlet-name>
+        <url-pattern>/Employee-Transfer-NonBooked-Rooms</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
